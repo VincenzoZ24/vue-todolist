@@ -1,7 +1,7 @@
 new Vue ({
     el: "#root",
     data:{
-        todo: [
+        todos: [
             {
                 text: "fare gli esercizi",
                 done: true

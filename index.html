@@ -20,14 +20,11 @@
         </div>
         <div class="container_list">
             <ul>
-                <li class="todo">
-                    ciao
+                <li class="todo" v-for="(todo, index) in todos">
+                    {{todos[index].text}}
                     <i class="fa-solid fa-xmark"></i>
                 </li>
-                <li class="todo">
-                    ciao
-                    <i class="fa-solid fa-xmark"></i>
-                </li>
+               
             </ul>
         </div>
     </div>
