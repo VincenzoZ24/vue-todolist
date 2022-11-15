@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+.btn{
+    margin-left: 1rem;
+}
+.new_todo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.container_list{
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    border-bottom: 1px solid gray;
+}
