@@ -15,17 +15,18 @@
 <body>
     <div id="root" class="container">
         <div class="new_todo">
-            <input type="text">
-            <button class="btn">AGGIUNGI</button>
+            <input type="text" >
+            <button class="btn" @click="aggiungi">AGGIUNGI</button>
         </div>
         <div class="container_list">
-            <ul>
-                <li class="todo" v-for="(todo, index) in todos">
+            <ul v-if="todos.length !== 0">
+                <li class="todo" v-for="(todo, index) in todos" >
                     {{todos[index].text}}
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark" @click="eliminaTodo(index)"></i>
                 </li>
                
             </ul>
+            <h2 v-else >LISTA VUOTA</h2>
         </div>
     </div>
 </body>

@@ -16,11 +16,9 @@
     justify-content: center;
     margin-bottom: 4rem;
 }
-.container_list{
-    border: 1px solid gray;
-    background-color: lightgray;
-}
+
 li{
+    background-color: rgb(208, 203, 203);
     list-style: none;
     display: flex;
     justify-content: space-between;
