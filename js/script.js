@@ -9,16 +9,20 @@ new Vue ({
             {
                 text: "andare in palestra",
                 done: true
-            }
+            },
+            
         ],
+        
         newTodo:"",
     },
+    
     methods:{
         aggiungi(){
-            this.todos.push(newtodo)
+            this.todos.push(this.newTodo)
         },
         eliminaTodo(index){
             this.todos.splice(index,1)
         }
-    }
+    },
+    
 })
