@@ -13,12 +13,16 @@ new Vue ({
             
         ],
         
-        newTodo:"",
+        newTodo:""
+    
     },
     
     methods:{
         aggiungi(){
-            this.todos.push(this.newTodo)
+            this.todos.push({
+                text: this.newTodo,
+                done: false
+            })
         },
         eliminaTodo(index){
             this.todos.splice(index,1)
